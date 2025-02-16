@@ -1,3 +1,66 @@
+# THNDR Stock App
+
+A React-based stock trading application built with TypeScript and Vite.
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn package manager
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ReemEmad/thndr-stock-app.git
+cd thndr-stock-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the app for production
+- `npm run lint` - Runs ESLint to check code quality
+- `npm run preview` - Previews the production build locally
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- ESLint
+- React Query
+
+## Project Structure
+
+```
+src/
+  ├── components/    # Reusable UI components
+  ├── services/      # API and other services
+  ├── types/         # TypeScript type definitions
+  ├── hooks/         # Custom hooks
+  └── utils/         # Utility functions
+  └── test/          # Test files
+
+
+  
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,4 +111,12 @@ export default tseslint.config({
   },
 })
 ```
-"# thndr-stock-app" 
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
