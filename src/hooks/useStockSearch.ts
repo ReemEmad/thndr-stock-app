@@ -1,6 +1,6 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { fetchStocksPage, RateLimitError, ApiError } from '../services/stockApi';
-import { PageData } from '../data/stock';
+import { PageData } from '../types/stockData';
 
 export const useStockSearch = (searchTerm: string) => {
   return useInfiniteQuery<PageData, ApiError>({

@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import debounce from 'lodash/debounce';
 import { MagnifyingGlassIcon, ArrowUpIcon } from '@heroicons/react/24/outline';
 import { StockCard } from './stock-card';

@@ -1,4 +1,4 @@
-import { PageData } from "../data/stock";
+import { PageData } from "../types/stockData";
 
 export const API_CONFIG = {
   KEY: import.meta.env.VITE_POLYGON_API_KEY,

@@ -1,5 +1,5 @@
 import { formatDate } from '../utils/dateUtils';
-import { StockValue } from '../data/stock';
+import { StockValue } from '../types/stockData';
 
 export const StockCard = ({ timestamp, value }: StockValue) => {
   return (
