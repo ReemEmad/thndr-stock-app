@@ -5,7 +5,7 @@ import { StockCard } from './stock-card';
 import { useStockSearch } from '../hooks/useStockSearch';
 import { RateLimitError, ApiError } from '../services/stockApi';
 import type { InfiniteData } from '@tanstack/react-query';
-import type { PageData } from '../types/stock';
+import type { PageData } from '../types/stockData';
 
 function StockSearch() {
   const [searchTerm, setSearchTerm] = useState('AAPL');
@@ -34,7 +34,7 @@ function StockSearch() {
     debouncedSearch(value);
   }, [debouncedSearch]);
 
-  const allStocks = (data as InfiniteData<PageData>)?.pages.flatMap(page => page.results.values) ?? [];
+  const allStocks = (data as unknown as InfiniteData<PageData>)?.pages.flatMap(page => page.results.results.values) ?? [];
 
   const handleScroll = useCallback((event: React.UIEvent<HTMLDivElement>) => {
     const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
