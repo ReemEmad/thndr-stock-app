@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import StockSearch from './components/stock-search';
-import nasdaqLogo from './assets/nasdaq_logo.png';
+import nasdaqLogo from './assets/NASDAQ_logo.png';
 
 function App() {
   const [loading, setLoading] = useState(true);
