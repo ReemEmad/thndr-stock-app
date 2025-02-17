@@ -10,12 +10,7 @@ export interface StockValue {
   }
   
 export interface StockData {
-  results: {
-    underlying: {
-      url: string;
-    };
-    values: StockValue[];
-  };
+  values: StockValue[];
   status: string;
   request_id: string;
   next_url: string;

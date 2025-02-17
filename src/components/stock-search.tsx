@@ -34,7 +34,7 @@ function StockSearch() {
     debouncedSearch(value);
   }, [debouncedSearch]);
 
-  const allStocks = (data as unknown as InfiniteData<PageData>)?.pages.flatMap(page => page.results.results.values) ?? [];
+  const allStocks = (data as unknown as InfiniteData<PageData>)?.pages.flatMap(page => page.results.values) ?? [];
 
   const handleScroll = useCallback((event: React.UIEvent<HTMLDivElement>) => {
     const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
