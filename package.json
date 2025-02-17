@@ -15,7 +15,7 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.0.3",
-    "@tanstack/react-query": "^5.66.0",
+    "@tanstack/react-query": "^5.66.3",
     "@types/lodash": "^4.17.15",
     "lodash": "^4.17.21",
     "react": "^19.0.0",
